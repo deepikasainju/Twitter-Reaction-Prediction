@@ -48,7 +48,7 @@ if st.button("Submit"):
     react_data = {'predict_react':[react]}
     react_data_df = pd.DataFrame(react_data)
     predict_react_cat = model.predict(react_data_df['predict_react'])
-    st.text("Predicted reaction of review = ",predict_react_cat[0])
+    st.write("Predicted reaction of review = ",predict_react_cat[0])
 else:
     st.text("please enter the news")
 
